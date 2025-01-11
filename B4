@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int l = 0;
+    int d[7];
+    for (int i = 0; i < 7; i++){
+       cin >> d[i];
+    }      
+  
+    for (int k = 0; k < 7; k++){
+        if (20 <= d[k] && d[k] <= 30){
+            l++;
+            
+        }
+    }
+    
+    if (l == 7){
+            cout << "ALL";
+    } else if (l == 0){
+            cout << "NO";
+    } else{     
+        cout << "Thoa man: " ;
+        
+        for (int k = 0; k < 7; k++){
+            if (20 <= d[k] && d[k] <= 30){
+                if (k + 2 != 8){
+                    cout << "Thu " << k + 2 << endl;
+                } else {
+                    cout << "Chu nhat";
+                }
+                
+            }
+        }
+       
+    }  
+    return 0;
+}
