@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+  int n;
+  cin >> n;
+  int d[n];
+  for (int i = 0; i < n; i++){
+      cin >> d[i];
+  }
+  
+  for (int m = 1; m < n; m++){
+     if (d[0] % d[m] == 0){
+         cout << d[m] << " ";
+     }
+  }
+  
+  return 0;
+}
